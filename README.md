@@ -7,6 +7,7 @@ Certains paramètres peut être modifiés au début du code :
 - Les 3 couleurs utilisée : deux pour différencier les syllabes et une autres pour les mots non pris en compte
 - Le nombre de caractères minimal des mots a traité (si on choisit 4, "Rémi" ne sera pas analysé mais "école" si).
 
+
 On peut retrouver dans le dossier "data" 4 fichiers textes :
 - Excepti0n.txt : liste des exceptions française. Je vous invite à le compléter et a le partager.
 - FinMot.txt : ce sont les caractères qui définissent la fin d'un mot / transition entre deux mots.
