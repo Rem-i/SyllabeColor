@@ -1,0 +1,2 @@
+python SyllabeColor.py
+pause
