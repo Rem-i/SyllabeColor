@@ -57,7 +57,7 @@ def PlaceSyllabe(Mot):
         DeuxLettres = Mot[n] + Mot[n+1]
         if DeuxLettres not in GroupeSon :
 
-            if Mot[n] not in Voyelles and Mot[n+1] not in Voyelles and Mot[n+1] != len(Mot)-1 :
+            if Mot[n] not in Voyelles and Mot[n+1] not in Voyelles and Mot[n+1] != len(Mot) :
                 PlaceSéparation.append(n)
 
             if Mot[n] in Voyelles and Mot[n+1] not in Voyelles :
@@ -111,7 +111,7 @@ def TexteEnMotsSyllabé(Texte,NbrMinMotATraiter,séparateur):
 
                     # L'exception se trouve 1 plus loin dans la liste, après le mot trouvé
                     Excepti0nActuel = Excepti0n[PlaceListe+1]
-                    Excepti0nActuel = Excepti0nActuel.replace("%",séparateur)
+                    Excepti0nActuel = Excepti0nActuel.replace("-",séparateur)
 
                     # On concate
                     TexteAvecSéparateur = TexteAvecSéparateur + Excepti0nActuel
