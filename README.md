@@ -9,7 +9,7 @@ Certains paramètres peut être modifiés au début du code :
 
 
 On peut retrouver dans le dossier "data" 4 fichiers textes :
-- Excepti0n.txt : liste des exceptions française. Je vous invite à le compléter et a le partager.
+- Excepti0n.txt : liste des exceptions française. Je vous invite à la compléter et a la partager.
 - FinMot.txt : ce sont les caractères qui définissent la fin d'un mot / transition entre deux mots.
 - GroupeSon.txt : liste des groupes de son qui ne doivent pas être séparé dans les mots (digramme, trigramme, ...).
 - Voyelles.txt : liste des voyelles, sous toutes leurs formes
