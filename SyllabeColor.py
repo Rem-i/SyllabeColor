@@ -157,10 +157,18 @@ for m in range(len(Texte_De_Base)):
                 # temps = temps.replace(séparateur,"")
 
                 if CompteurCouleur == 1 :
-                    PageHTML.write('<FONT color="' + Couleur1 + '">' + temps + "</FONT>")
+                    if temps[-1:] in FinMot :
+                        PageHTML.write('<FONT color="' + Couleur1 + '">' + temps[:-1] + "</FONT>")
+                        PageHTML.write('<FONT color="' + Couleur3 + '">' + temps[-1:] + "</FONT>")
+                    else :
+                        PageHTML.write('<FONT color="' + Couleur1 + '">' + temps + "</FONT>")
                     CompteurCouleur = 2
                 else:
-                    PageHTML.write('<FONT color="' + Couleur2 + '">' + temps + "</FONT>")
+                    if temps[-1:] in FinMot :
+                        PageHTML.write('<FONT color="' + Couleur2 + '">' + temps[:-1] + "</FONT>")
+                        PageHTML.write('<FONT color="' + Couleur3 + '">' + temps[-1:] + "</FONT>")
+                    else :
+                        PageHTML.write('<FONT color="' + Couleur2 + '">' + temps + "</FONT>")
                     CompteurCouleur = 1
             temps = ""
 
@@ -170,8 +178,3 @@ for m in range(len(Texte_De_Base)):
 # Fin de la page HTML
 PageHTML.write("<body>  <html>")
 PageHTML.close()
-
-# print(PlaceSyllabe("manège"))
-
-# print(TexteEnMotsSyllabé("manège",3,séparateur))
-
